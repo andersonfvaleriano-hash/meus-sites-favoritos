@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Define a linguagem do documento como português do Brasil -->
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres UTF-8 para suporte a acentos -->
+    <meta charset="UTF-8">
+    <!-- Configura a responsividade da página para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da aba da página exigido no enunciado -->
+    <title>Meus sites favoritos</title>
+
+    <!-- Estilização CSS interna para deixar a página bem apresentável -->
+    <style>
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Título principal no topo da página */
+        .titulo-principal {
+            color: #1a252f;
+            margin-bottom: 30px;
+        }
+
+        /* Container principal dos cartões de sites */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilo de cada cartão de site */
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+
+        /* Efeito de destaque ao passar o mouse no cartão */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Tag h1 para o nome do site acima da imagem */
+        .card h1 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Estilização das imagens dos sites */
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilo dos links abaixo das imagens */
+        .card a.link-site {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+        .card a.link-site:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título do corpo da página -->
+    <h1 class="titulo-principal">Meus sites favoritos: Anderson F Valeriano </h1>
+
+    <!-- Container organizador dos 5 sites requeridos -->
+    <div class="container">
+
+        <!-- SITE 1: YouTube -->
+        <div class="card">
+            <!-- Nome do site acima da imagem usando a tag <h1> -->
+            <h1>YouTube</h1>
+            <!-- Imagem do site com link clicável (opcional do enunciado implementado) -->
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="img/youtube.png" alt="Logotipo do YouTube">
+            </a>
+            <!-- Link para o site inserido abaixo da imagem -->
+            <a href="https://www.youtube.com" target="_blank" class="link-site">https://www.youtube.com</a>
+        </div>
+
+        <!-- SITE 2: EADTEC -->
+        <div class="card">
+            <!-- Nome do site acima da imagem usando a tag <h1> -->
+            <h1>EADTEC</h1>
+            <!-- Imagem do site com link clicável -->
+            <a href="https://eadtec.cps.sp.gov.br" target="_blank">
+                <img src="img/eadtec.png" alt="Portal EADTEC">
+            </a>
+            <!-- Link para o site inserido abaixo da imagem -->
+            <a href="https://eadtec.cps.sp.gov.br" target="_blank" class="link-site">https://eadtec.cps.sp.gov.br</a>
+        </div>
+
+        <!-- SITE 3: Hackaday (Curiosidades de Eletrônica e Projetos) -->
+        <div class="card">
+            <!-- Nome do site acima da imagem usando a tag <h1> -->
+            <h1>Hackaday</h1>
+            <!-- Imagem do site com link clicável -->
+            <a href="https://hackaday.com" target="_blank">
+                <img src="img/hackaday.png" alt="Portal Hackaday">
+            </a>
+            <!-- Link para o site inserido abaixo da imagem -->
+            <a href="https://hackaday.com" target="_blank" class="link-site">https://hackaday.com</a>
+        </div>
+
+        <!-- SITE 4: Electronics Weekly (Notícias e Curiosidades em Eletrônica) -->
+        <div class="card">
+            <!-- Nome do site acima da imagem usando a tag <h1> -->
+            <h1>Electronics Weekly</h1>
+            <!-- Imagem do site com link clicável -->
+            <a href="https://www.electronicsweekly.com" target="_blank">
+                <img src="img/electronics-weekly.png" alt="Electronics Weekly">
+            </a>
+            <!-- Link para o site inserido abaixo da imagem -->
+            <a href="https://www.electronicsweekly.com" target="_blank" class="link-site">https://www.electronicsweekly.com</a>
+        </div>
+
+        <!-- SITE 5: DEV Community (Curiosidades e Artigos sobre Programação) -->
+        <div class="card">
+            <!-- Nome do site acima da imagem usando a tag <h1> -->
+            <h1>DEV Community</h1>
+            <!-- Imagem do site com link clicável -->
+            <a href="https://dev.to" target="_blank">
+                <img src="img/dev-to.png" alt="DEV Community">
+            </a>
+            <!-- Link para o site inserido abaixo da imagem -->
+            <a href="https://dev.to" target="_blank" class="link-site">https://dev.to</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
